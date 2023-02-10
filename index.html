@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weatherapp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+
+<body>
+  <!-- Some awesome effects -->
+  <div id="container">
+    <div id="bg">
+      <div id="main-d">
+        <div class="detail">
+          <div id="temp">15</div>
+          <div id="city">
+            <div class="c-name">London</div>
+            <div class="date-time">14-Feb</div>
+          </div>
+          <div class="whether-status">
+            <img src="img/Sun-cloud.png" alt="icon" class="whether-icon">
+            Cloudy
+          </div>
+        </div>
+      </div>
+      <div id="side-d">
+        <!-- search bar -->
+        <div class="search">
+          <input type="text" id="search-city" placeholder="  search-city">
+          <button id="search-button" onclick="myfun()"><img src="img/srch-b.jpg" alt="" class="search-icon"></button>
+        </div>
+        <hr class="line">
+        <!-- other temp details -->
+        <div id="temp-details"> <!-- div to be added dynamically-->
+
+          <!-- temp, wind -kph -degree -direction, humidity, cloud, feelslike_c, vis_km, gust_kph, pressure-in , uv-->
+          <!-- <div class="temp-d">Temp: </div> <br>
+          <div class="temp-d">Feels like: </div> <br>
+          <div class="temp-d">Wind -kph: </div> <br>
+          <div class="temp-d">Wind -deg: </div> <br>
+          <div class="temp-d">Wind -dir: </div> <br>
+          <div class="temp-d">Humidity: </div> <br>
+          <div class="temp-d">Cloud: </div> <br>
+          <div class="temp-d">Visibility -km: </div> <br>
+          <div class="temp-d">Gust_kph: </div> <br>
+          <div class="temp-d">Pressure-in: </div> <br>
+          <div class="temp-d">UV: </div> <br>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <script src="fetch.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

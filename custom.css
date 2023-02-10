@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    /* overflow: hidden; */
+    height: 100vh;
+    width: 100%; 
+    border: 1px solid;
+}
+#bg{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background: url("img/storm.jpg") no-repeat;
+
+}
+#main-d{
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 95vh;
+    /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5); */
+}
+
+.detail{
+    /* border: 1px solid pink; */
+    height: 30%;
+    width: 60%;
+    display: flex;
+    margin: 55% 15%;
+    color: white;
+}
+#temp{
+    /* border: 1px solid blueviolet; */
+    /* width: 20%; */
+    margin: auto;
+    font-size: 4rem;
+}
+#city{
+    margin: auto;
+    /* border: 1px solid blueviolet; */
+    /* width: 80%; */
+    /* padding: 2rem; */
+}
+.whether-status{
+    /* display: none; */
+    /* border: 1px solid white; */
+    margin: auto;
+    height: 5rem;
+    /* transform: translateX(-5rem); */
+}
+.whether-icon{
+    /* aspect-ratio: 1; */
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.c-name{
+    font-family: sans-serif;
+    font-size: 3rem;
+}
+.date-time{
+    font-size: 1rem;
+}
+
+#side-d{
+    /* border-left: 1px solid orangered; */
+    width: 35%;
+    height: 95vh;
+    color: rgb(240, 240, 240);
+    backdrop-filter: blur(2rem);
+}
+
+#search-city{
+    border :1px solid rgb(153, 153, 153);
+    transform:translateY(1mm) translateX(1mm);
+    color: white;
+    width: 81%;
+    height: 4rem;
+    background: transparent;
+    margin-left: 10px;
+}
+.search-icon{
+    height: 4rem;
+    width: 4rem;
+}
+
+#temp-details{
+    /* border: 1px solid white; */
+    height: 80vh;
+    margin: 3rem 1rem;
+    /* overflow: scroll; */
+}
+
+.temp-d{
+    color: rgb(239, 239, 239);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
