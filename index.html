@@ -12,7 +12,7 @@
 </head>
 
 
-<body>
+<body style="background-color: rgb(26, 25, 25);">
   <!-- Some awesome effects -->
   <div id="container">
     <div id="bg">
@@ -21,7 +21,9 @@
           <div id="temp">15</div>
           <div id="city">
             <div class="c-name">London</div>
-            <div class="date-time">14-Feb</div>
+            <div class="date-time">
+              <div class="date"></div> &ThickSpace;<div class="mon"></div>
+            </div>
           </div>
           <div class="whether-status">
             <img src="img/Sun-cloud.png" alt="icon" class="whether-icon">
@@ -36,11 +38,12 @@
           <button id="search-button" onclick="myfun()"><img src="img/srch-b.jpg" alt="" class="search-icon"></button>
         </div>
         <hr class="line">
+        
         <!-- other temp details -->
         <div id="temp-details"> <!-- div to be added dynamically-->
 
           <!-- temp, wind -kph -degree -direction, humidity, cloud, feelslike_c, vis_km, gust_kph, pressure-in , uv-->
-          <!-- <div class="temp-d">Temp: </div> <br>
+            <div class="temp-d">Temp: </div> <br>
           <div class="temp-d">Feels like: </div> <br>
           <div class="temp-d">Wind -kph: </div> <br>
           <div class="temp-d">Wind -deg: </div> <br>
@@ -51,7 +54,7 @@
           <div class="temp-d">Gust_kph: </div> <br>
           <div class="temp-d">Pressure-in: </div> <br>
           <div class="temp-d">UV: </div> <br>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>

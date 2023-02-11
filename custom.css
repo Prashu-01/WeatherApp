@@ -9,6 +9,7 @@ body{
     width: 100%; 
     border: 1px solid;
 }
+
 #bg{
     /* border: 1px solid white; */
     width: 100%;
@@ -16,9 +17,9 @@ body{
     display: flex;
     flex-flow: row;
     justify-content: center;
-    background: url("img/storm.jpg") no-repeat;
-
+    background: url("img/storm.jpg") no-repeat fixed center;
 }
+
 #main-d{
     /* border: 1px solid red; */
     width: 60%;
@@ -63,6 +64,7 @@ body{
     font-size: 3rem;
 }
 .date-time{
+    display: flex;
     font-size: 1rem;
 }
 
@@ -73,7 +75,9 @@ body{
     color: rgb(240, 240, 240);
     backdrop-filter: blur(2rem);
 }
-
+.search{
+    display: flex;
+}
 #search-city{
     border :1px solid rgb(153, 153, 153);
     transform:translateY(1mm) translateX(1mm);
@@ -98,4 +102,14 @@ body{
 .temp-d{
     color: rgb(239, 239, 239);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media only screen and (min-width: 1100px) { /* web view */
+    
+}
+@media only screen and (min-width: 1099px) and (max-width:700px){ /* tab view */
+
+}
+@media only screen and (max-width:699px){ /* mobile view */
+
 }
