@@ -1,6 +1,8 @@
+// setting default city from cookies
 let city = "Varanasi"
+
+// date on weather app
 let d = new Date()
-// document.querySelector(".date-time").innerHTML=d.getDate()
 let mon = d.getMonth()
 let str_mon
 switch (mon) {
@@ -44,6 +46,7 @@ switch (mon) {
 document.querySelector(".date").innerHTML= d.getDate()
 document.querySelector(".mon").innerHTML = str_mon
 
+// displaying weather of searched city
 function myfun() {
     let city = document.querySelector("#search-city").value
     let url = `http://api.weatherapi.com/v1/current.json?key=ae8808174ead4af190b94146221112&q=${city}`
@@ -54,18 +57,29 @@ function myfun() {
     }).then((weather) => {
         cardhtml = ""
 
-        // !testing for Weather + appending it in "all-cards" 
+        // testing for Weather + appending it in "all-cards" 
+        // !for traversing object in object
         for (items in weather) {
             console.log(weather[items])
         }
-
-        // !for traversing object in object
-        // for(i in weather[items].condition){ 
-        //     console.log(weather[items].condition[i])
-        // }
-        // console.log(weather[items].name)
+        
         document.querySelector("#temp").innerHTML = `${weather[items].temp_c} &deg`
         document.querySelector(".c-name").innerHTML = `${city}`
+        let status
+        for(i in weather[items].condition){
+            status=weather[items].condition[i]
+        }
+        document.querySelector(".wea-status").innerHTML=`${status}`
+
+        document.querySelector(".whether-icon").innerHTML=`<img src="img/Sun-cloud.png" alt="icon" class="whether-icon">`
+
+        // dynamic background change
+        let background=document.querySelector("#bg")
+        if(status=="Sunny"){
+            background.style.background="url(img/pexels-lisa-fotios-1107717.jpg) no-repeat fixed center"
+        }
+
+        // will change from adding a new div to changing pertcular value for each part.
         cardhtml +=
             `<div class="temp-details">
           <div class="temp-d">Temp: ${weather[items].temp_c} &deg;C</div> <br>
