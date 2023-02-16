@@ -58,25 +58,50 @@ function myfun() {
         cardhtml = ""
 
         // testing for Weather + appending it in "all-cards" 
-        // !for traversing object in object
+        // !for traversing object elements in object uncomment the below comment
         for (items in weather) {
             console.log(weather[items])
         }
         
         document.querySelector("#temp").innerHTML = `${weather[items].temp_c} &deg`
         document.querySelector(".c-name").innerHTML = `${city}`
+        
         let status
         for(i in weather[items].condition){
             status=weather[items].condition[i]
         }
         document.querySelector(".wea-status").innerHTML=`${status}`
 
-        document.querySelector(".whether-icon").innerHTML=`<img src="img/Sun-cloud.png" alt="icon" class="whether-icon">`
-
         // dynamic background change
-        let background=document.querySelector("#bg")
-        if(status=="Sunny"){
-            background.style.background="url(img/pexels-lisa-fotios-1107717.jpg) no-repeat fixed center"
+        let background=document.querySelector("#container")
+        switch(status){
+            case "Sunny":
+                background.style.background="url(img/pexels-lisa-fotios-1107717.jpg) no-repeat fixed center"
+                document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/sun.png" alt="icon" class="whether-icon">
+                <div class="wea-status">${status}</div>`
+                break
+            case "Cloudy":
+                background.style.background="url(img/pexels-pixabay-531756.jpg) no-repeat fixed center"
+                document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/cloud.png" alt="icon" class="whether-icon">
+                <div class="wea-status">${status}</div>`
+                break
+            case "Rainy":
+                background.style.background="url(img/pexels-lisa-fotios-1107717.jpg) no-repeat fixed center"
+                document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/rainy.png" alt="icon" class="whether-icon">
+                <div class="wea-status">${status}</div>`
+                break
+            case "Clear":
+                background.style.background="url(img/clear-night.jpg) no-repeat fixed center"
+                document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/moon.png" alt="icon" class="whether-icon">
+                <div class="wea-status">${status}</div>`
+                break
+            // case "":
+            //     break
+            default:
+                background.style.background="url(img/pexels-pixabay-209831.jpg) no-repeat fixed center"
+                document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/cloud.png" alt="icon" class="whether-icon">
+                <div class="wea-status">${status}</div>`
+                break
         }
 
         // will change from adding a new div to changing pertcular value for each part.
@@ -95,5 +120,5 @@ function myfun() {
           <div class="temp-d">UV: ${weather[items].uv} mW/m &square;</div> <br>
         </div>`
         allcard.innerHTML = cardhtml
-    }).catch(err => console.error(err))
+    }).catch(err => alert(err))
 }

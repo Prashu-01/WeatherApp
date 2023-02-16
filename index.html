@@ -15,9 +15,17 @@
 <body style="background-color: rgb(26, 25, 25);">
   <!-- Some awesome effects -->
   <div id="container">
+    <div class="nav">
+      <div class="weather-app">weather-app.in</div>
+      <div class="search">
+        <input type="text" id="search-city" placeholder="  search-city">
+        <img src="img/search_.png" alt="" class="search-icon" onclick="myfun()">
+      </div>
+    </div>
     <div id="bg">
+      <!-- search bar -->
+      
       <div id="main-d">
-        <div class="weather-app">weather-app.in</div>
         <div class="detail">
           <div id="temp">15</div>
           <div id="city">
@@ -33,11 +41,6 @@
         </div>
       </div>
       <div id="side-d">
-        <!-- search bar -->
-        <div class="search">
-          <input type="text" id="search-city" placeholder="  search-city">
-          <button id="search-button" onclick="myfun()"><img src="img/srch-b.jpg" alt="" class="search-icon"></button>
-        </div>
         <hr class="line">
         
         <!-- other temp details -->
@@ -59,7 +62,9 @@
       </div>
     </div>
   </div>
-
+  <footer class="bottom">
+    &copy; designed by Prashu, website powered by a realtime API: <a href="https://www.weatherapi.com/api.aspx">weatherAPI</a>
+  </footer>
   <script src="fetch.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
