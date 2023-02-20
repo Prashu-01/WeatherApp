@@ -49,7 +49,7 @@ document.querySelector(".mon").innerHTML = str_mon
 // displaying weather of searched city
 function myfun() {
     let city = document.querySelector("#search-city").value
-    let url = `http://api.weatherapi.com/v1/current.json?key=ae8808174ead4af190b94146221112&q=${city}`
+    let url = `https://api.weatherapi.com/v1/current.json?key=ae8808174ead4af190b94146221112&q=${city}`
     let allcard = document.querySelector("#temp-details")
     let response = fetch(url)
     response.then((v) => {
