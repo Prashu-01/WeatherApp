@@ -40,9 +40,6 @@ body{
     height: 90vh;
 }
 
-
-
-
 .search{
     display: flex;
 }
@@ -56,12 +53,6 @@ body{
     margin-left: 10px;
 }
 
-#temp-details{
-    /* border: 1px solid white; */
-    margin: 1rem 1rem;
-    font-size: large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 @media only screen and (min-width: 1100px) { /* web view */
     .detail{
@@ -73,11 +64,11 @@ body{
         color: white;
     }
     .search{
-        margin: 10px 2px;
+        width: 35%;
     }
     .search-icon{
         height: 4rem;
-        width: 4rem;
+        /* width: 4rem; */
     }
     #temp{
         /* border: 1px solid blueviolet; */
@@ -113,6 +104,15 @@ body{
         height: 90vh;
         color: rgb(240, 240, 240);
         backdrop-filter: blur(2rem);
+        overflow: hidden;
+    }
+    #temp-details{
+        /* border: 1px solid white; */
+        font-size: large;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .temp-d{
+        margin: 2rem 2rem;
     }
 }
 
@@ -120,6 +120,11 @@ body{
 
 }
 @media only screen and (max-width:699px){ /* mobile view */
+    /* .weather-app{
+        color: rgb(238, 238, 238);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: larger;
+    } */
     #bg{
         display: block;
     }
@@ -131,13 +136,13 @@ body{
 
     .detail{
         margin-left: 1rem;
-        color: white;
+        color: rgb(255, 255, 255);
     }
     #temp{
         /* border: 1px solid blueviolet; */
         margin: auto;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 5rem;
+        font-size: 3rem;
     }
     #city{
         /* margin: auto; */
@@ -145,6 +150,8 @@ body{
     }
     .whether-status{
         /* border: 1px solid red; */
+        font-family: monospace;
+        color: rgb(238, 238, 238);
     }
     .whether-icon{
         margin-top: 20px;
@@ -158,12 +165,6 @@ body{
     .date-time{
         display: flex;
         font-size: 1rem;
-    }
-
-    .weather-app{
-        color: rgb(238, 238, 238);
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: larger;
     }
 
     .search{
@@ -181,13 +182,24 @@ body{
         height: 2rem;
         width: 2rem;
     }
+    .line{
+        /* display: none; */
+        width: 70%;
+        margin: 1rem auto;
+    }
     #side-d{
         /* border: 1px solid orangered; */
         color: rgb(240, 240, 240);
         backdrop-filter: blur(1rem);
+        /* overflow: scroll; */
+    }
+    #temp-details{
+        /* border: 1px solid white; */
+        /* font-size: large; */
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
 .bottom{
     text-align: center;
-    color: rgb(225, 225, 225);
+    color: rgb(161, 161, 161);
 }
