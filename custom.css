@@ -37,14 +37,13 @@ body{
 #main-d{
     /* border: 1px solid violet; */
     width: 60%;
-    height: 90vh;
 }
 
 .search{
     display: flex;
 }
 #search-city{
-    border:1px solid rgb(153, 153, 153);
+    border: 2px solid rgb(161, 161, 161);
     /* transform:translateY(1mm); */
     color: rgb(234, 234, 234);
     width: 25rem;
@@ -113,6 +112,7 @@ body{
         font-family: 'Jost', sans-serif;
     }
     .temp-d{
+        display: flex;
         margin: 2rem 2rem;
     }
 }
@@ -196,9 +196,12 @@ body{
     }
     #temp-details{
         /* border: 1px solid white; */
-        /* font-size: large; */
-        font-family: 'Jost', sans-serif;
-        
+        font-family: 'Jost', sans-serif;   
+        font-size: smaller;
+    }
+    .temp-d{
+        /* border: 1px solid red; */
+        display: flex;
     }
 }
 .bottom{
