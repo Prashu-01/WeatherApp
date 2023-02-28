@@ -107,17 +107,17 @@ function myfun() {
         // will change from adding a new div to changing pertcular value for each part.
         cardhtml +=
             `<div class="temp-details">
-          <div class="temp-d">Temp: ${weather[items].temp_c} &deg;C</div>
-          <div class="temp-d">Feels like: ${weather[items].feelslike_c} &deg;C</div>
-          <div class="temp-d">Wind -kph: ${weather[items].wind_kph} Kmph</div>
-          <div class="temp-d">Wind -deg: ${weather[items].wind_degree}&deg;</div>
-          <div class="temp-d">Wind -dir: ${weather[items].wind_dir}</div>
-          <div class="temp-d">Humidity: ${weather[items].humidity} &percnt;</div>
-          <div class="temp-d">Cloud: ${weather[items].cloud} &percnt;</div>
-          <div class="temp-d">Visibility -km: ${weather[items].vis_km} Kmph</div>
-          <div class="temp-d">Gust_kph: ${weather[items].gust_kph} Kmph</div>
-          <div class="temp-d">Pressure-in: ${weather[items].pressure_in}</div>
-          <div class="temp-d">UV: ${weather[items].uv} mW/m &square;</div>
+          <span class="temp-d">Temp: ${weather[items].temp_c} &deg;C</span>
+          <span class="temp-d">Feels like: ${weather[items].feelslike_c} &deg;C</span>
+          <span class="temp-d">Wind -kph: ${weather[items].wind_kph} Kmph</span>
+          <span class="temp-d">Wind -deg: ${weather[items].wind_degree}&deg;</span>
+          <span class="temp-d">Wind -dir: ${weather[items].wind_dir}</span>
+          <span class="temp-d">Humidity: ${weather[items].humidity} &percnt;</span>
+          <span class="temp-d">Cloud: ${weather[items].cloud} &percnt;</span>
+          <span class="temp-d">Visibility -km: ${weather[items].vis_km} Kmph</span>
+          <span class="temp-d">Gust_kph: ${weather[items].gust_kph} Kmph</span>
+          <span class="temp-d">Pressure-in: ${weather[items].pressure_in}</span>
+          <span class="temp-d">UV: ${weather[items].uv} mW/m &square;</span>
         </div>`
         allcard.innerHTML = cardhtml
     }).catch(err => alert(err))

@@ -208,15 +208,16 @@ body{
     }
     #temp-details{
         /* border: 1px solid white; */
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        /* flex-wrap: wrap;
+        justify-content: space-around; */
         font-family: 'Jost', sans-serif;   
         font-size: smaller;
     }
     .temp-d{
-        /* border: 1px solid red; */
-        width: 20%;
-        margin: 10px 5px;
+        border: 1px solid red;
+        /* width: 50%; */
+        /* margin: 10px 10px; */
     }
 }
 .bottom{
