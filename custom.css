@@ -43,17 +43,17 @@ body{
     display: flex;
 }
 #search-city{
-    border: 2px solid rgb(161, 161, 161);
+    /* border: 2px solid rgb(161, 161, 161); */
     /* transform:translateY(1mm); */
     color: rgb(234, 234, 234);
     width: 25rem;
-    height: 4.1rem;
+    height: 4rem;
     background: transparent;
-    margin-left: 10px;
+    margin-left: 10px; 
 }
 
 
-@media only screen and (min-width: 1100px) { /* web view */
+@media only screen and (min-width: 1100px) {   /* PC view */
     .detail{
         /* border: 1px solid pink; */
         width: 60%;
@@ -63,7 +63,12 @@ body{
         color: white;
     }
     .search{
+        z-index: 2;
         width: 35%;
+        margin: 1rem;
+        padding: 0;
+        overflow: hidden;
+   
     }
     .search-icon{
         height: 4rem;
@@ -101,11 +106,19 @@ body{
     #side-d{
         /* border: 1px solid orangered; */
         width: 35%;
-        height: 90vh;
+        /* height: 90vh; */
+        transform: translateY(-6em);
         color: rgb(240, 240, 240);
+        z-index: 0;
         backdrop-filter: blur(2rem);
         overflow: hidden;
     }
+    .line{
+        width: 90%;
+        color: rgb(216, 216, 216);
+        margin-top: 8rem;
+    }
+
     #temp-details{
         /* border: 1px solid white; */
         font-size: large;
@@ -117,15 +130,13 @@ body{
     }
 }
 
-@media only screen and (min-width: 1099px) and (max-width:700px){ /* tab view */
+@media only screen and (min-width: 1099px) and (max-width: 700px){ /* tab view */
 
 }
-@media only screen and (max-width:699px){ /* mobile view */
-    /* .weather-app{
-        color: rgb(238, 238, 238);
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: larger;
-    } */
+@media only screen and (max-width: 699px){ /* smartphone view */
+    .weather-app{
+        margin: 40px 10px;
+    }
     #bg{
         display: block;
     }
@@ -152,6 +163,7 @@ body{
     .whether-status{
         /* border: 1px solid red; */
         font-family: monospace;
+        font-size: smaller;
         color: rgb(238, 238, 238);
     }
     .whether-icon{
@@ -196,12 +208,15 @@ body{
     }
     #temp-details{
         /* border: 1px solid white; */
+        display: flex;
+        flex-wrap: wrap;
         font-family: 'Jost', sans-serif;   
         font-size: smaller;
     }
     .temp-d{
         /* border: 1px solid red; */
-        display: flex;
+        width: 20%;
+        margin: 10px 5px;
     }
 }
 .bottom{
