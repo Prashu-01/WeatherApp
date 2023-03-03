@@ -6,7 +6,7 @@ body{
 #container{
     width: 100%; 
     background: url("img/storm.jpg") no-repeat fixed center;
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
     overflow: hidden;
     /* border: 1px solid; */
 }
@@ -127,9 +127,9 @@ body{
     }
 }
 
-@media only screen and (max-width: 1099px) and (min-width: 451px){ /* tab view */
+@media only screen and (max-width: 1099px) and (min-width: 450px){ /* tab view */
     .search{
-        border: 1px solid white;
+        /* border: 1px solid white; */
         z-index: 2;
         width: 35%;
         margin: 1rem;
@@ -155,30 +155,30 @@ body{
     }
     .detail{
         width: 60%;
-        border: 1px solid white;
+        /* border: 1px solid white; */
         display: flex;
         justify-content: center;
-        margin: 40% 0%;
+        margin: 15rem 0rem;
     }
 
     #temp{
-        border: 1px solid blueviolet;
+        /* border: 1px solid blueviolet; */
         margin: auto;
-        font-size: 5rem;
+        font-size: 4rem;
         font-family: 'Jost', sans-serif;
     }
     #city{
         margin: auto;
-        border: 1px solid blueviolet;
+        /* border: 1px solid blueviolet; */
     }
     .whether-status{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin: auto;
-        height: 5rem;
+        /* height: 4rem; */
     }
     .whether-icon{
         /* aspect-ratio: 1; */
-        height: 3.5rem;
+        height: 3rem;
         width: 3.5rem;
     }
     .c-name{
@@ -234,10 +234,12 @@ body{
     #city{
         /* margin: auto; */
         /* border: 1px solid blueviolet; */
+        font-size: larger;
     }
     .whether-status{
         /* border: 1px solid red; */
-        font-family: monospace;
+        font-family:monospace ;
+        width: 40%;
         font-size: smaller;
         color: rgb(238, 238, 238);
     }
@@ -256,7 +258,7 @@ body{
     }
 
     .search{
-        margin: 2rem -1rem;
+        margin: 2rem -0.5rem;
     }
     #search-city{
         color: rgb(165, 165, 165);
@@ -276,24 +278,24 @@ body{
         margin: 1rem auto;
     }
     #side-d{
-        /* border: 1px solid orangered; */
+        border: 1px solid orangered;
         color: rgb(240, 240, 240);
         backdrop-filter: blur(1rem);
-        margin: 20px;
         height: 50%;
+        /* width: 100%; */
     }
     #temp-details{
         /* border: 1px solid white; */
+        padding-left: 10px;
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         font-family: 'Jost', sans-serif;   
         font-size: smaller;
     }
-    /* .temp-d{
-        border: 1px solid red;
-        width: 50%;
-        margin: 10px 10px;
-    } */
+    .temp-d{
+        /* border: 1px solid red; */
+        /* width: 50%; */
+    }
 }
 .bottom{
     text-align: center;

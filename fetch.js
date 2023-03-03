@@ -56,7 +56,6 @@ function myfun() {
         return v.json()
     }).then((weather) => {
         cardhtml = ""
-
         // testing for Weather + appending it in "all-cards" 
         // !for traversing object elements in object uncomment the below comment
         for (items in weather) {
@@ -72,7 +71,7 @@ function myfun() {
         }
         document.querySelector(".wea-status").innerHTML=`${status}`
 
-        // dynamic background change
+        // dynamically changing the background as per the weather condition
         let background=document.querySelector("#container")
         switch(status){
             case "Sunny":
@@ -104,10 +103,9 @@ function myfun() {
                 break
         }
 
-        // will change from adding a new div to changing pertcular value for each part.
-        cardhtml +=
-            `<div class="temp-details">
-          <span class="temp-d">Temp: ${weather[items].temp_c} &deg;C</span>
+        // more weather status div
+        cardhtml =
+          `<span class="temp-d">Temp: ${weather[items].temp_c} &deg;C</span>
           <span class="temp-d">Feels like: ${weather[items].feelslike_c} &deg;C</span>
           <span class="temp-d">Wind -kph: ${weather[items].wind_kph} Kmph</span>
           <span class="temp-d">Wind -deg: ${weather[items].wind_degree}&deg;</span>
@@ -117,8 +115,7 @@ function myfun() {
           <span class="temp-d">Visibility -km: ${weather[items].vis_km} Kmph</span>
           <span class="temp-d">Gust_kph: ${weather[items].gust_kph} Kmph</span>
           <span class="temp-d">Pressure-in: ${weather[items].pressure_in}</span>
-          <span class="temp-d">UV: ${weather[items].uv} mW/m &square;</span>
-        </div>`
+          <span class="temp-d">UV: ${weather[items].uv} mW/m &square;</span>`
         allcard.innerHTML = cardhtml
     }).catch(err => alert(err))
 }
