@@ -278,7 +278,7 @@ body{
         margin: 1rem auto;
     }
     #side-d{
-        border: 1px solid orangered;
+        /* border: 1px solid orangered;  */
         color: rgb(240, 240, 240);
         backdrop-filter: blur(1rem);
         height: 50%;
@@ -293,6 +293,7 @@ body{
         font-size: smaller;
     }
     .temp-d{
+        margin: 5px;
         /* border: 1px solid red; */
         /* width: 50%; */
     }
