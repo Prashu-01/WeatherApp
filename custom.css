@@ -5,7 +5,7 @@ body{
 
 #container{
     width: 100%; 
-    background: url("img/storm.jpg") no-repeat fixed center;
+    background: url("img/clear-day.jpg") no-repeat fixed center;
     transition: all .5s ease-in-out;
     overflow: hidden;
     /* border: 1px solid; */

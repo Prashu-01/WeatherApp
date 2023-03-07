@@ -75,12 +75,17 @@ function myfun() {
         let background=document.querySelector("#container")
         switch(status){
             case "Sunny":
-                background.style.background="url(img/pexels-lisa-fotios-1107717.jpg) no-repeat fixed center"
+                background.style.background="url(img/sunny_day.jpg) no-repeat fixed center"
                 document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/sun.png" alt="icon" class="whether-icon">
                 <div class="wea-status">${status}</div>`
                 break
             case "Cloudy":
-                background.style.background="url(img/pexels-pixabay-531756.jpg) no-repeat fixed center"
+                background.style.background="url(img/cloudy.jpg) no-repeat fixed center"
+                document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/cloud.png" alt="icon" class="whether-icon">
+                <div class="wea-status">${status}</div>`
+                break
+            case "Partly cloudy":
+                background.style.background="url(img/cloudy.jpg) no-repeat fixed center"
                 document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/cloud.png" alt="icon" class="whether-icon">
                 <div class="wea-status">${status}</div>`
                 break
@@ -96,6 +101,11 @@ function myfun() {
                 break
             // case "":
             //     break
+            case "Mist":
+                background.style.background="url(img/mist.jpg) no-repeat fixed center"
+                document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/mist.png" alt="icon" class="whether-icon">
+                <div class="wea-status">${status}</div>`
+                break
             default:
                 background.style.background="url(img/pexels-pixabay-209831.jpg) no-repeat fixed center"
                 document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/cloud.png" alt="icon" class="whether-icon">
