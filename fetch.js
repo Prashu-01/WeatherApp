@@ -72,42 +72,42 @@ function myfun() {
         document.querySelector(".wea-status").innerHTML=`${status}`
 
         // dynamically changing the background as per the weather condition
-        let background=document.querySelector("#container")
+        let bg=document.querySelector("#container")
         switch(status){
             case "Sunny":
-                background.style.background="url(img/sunny_day.jpg) no-repeat fixed center"
+                bg.style.background="url(img/sunny_day.jpg) no-repeat fixed center"
                 document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/sun.png" alt="icon" class="whether-icon">
                 <div class="wea-status">${status}</div>`
                 break
             case "Cloudy":
-                background.style.background="url(img/cloudy.jpg) no-repeat fixed center"
+                bg.style.background="url(img/cloudy.jpg) no-repeat fixed center"
                 document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/cloud.png" alt="icon" class="whether-icon">
                 <div class="wea-status">${status}</div>`
                 break
             case "Partly cloudy":
-                background.style.background="url(img/cloudy.jpg) no-repeat fixed center"
+                bg.style.background="url(img/cloudy.jpg) no-repeat fixed center"
                 document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/cloud.png" alt="icon" class="whether-icon">
                 <div class="wea-status">${status}</div>`
                 break
             case "Rainy":
-                background.style.background="url(img/pexels-lisa-fotios-1107717.jpg) no-repeat fixed center"
+                bg.style.background="url(img/pexels-lisa-fotios-1107717.jpg) no-repeat fixed center"
                 document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/rainy.png" alt="icon" class="whether-icon">
                 <div class="wea-status">${status}</div>`
                 break
             case "Clear":
-                background.style.background="url(img/clear-night.jpg) no-repeat fixed center"
+                bg.style.background="url(img/clear-night.jpg) no-repeat fixed center"
                 document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/moon.png" alt="icon" class="whether-icon">
                 <div class="wea-status">${status}</div>`
                 break
             // case "":
             //     break
             case "Mist":
-                background.style.background="url(img/mist.jpg) no-repeat fixed center"
+                bg.style.background="url(img/mist.jpg) no-repeat fixed center"
                 document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/mist.png" alt="icon" class="whether-icon">
                 <div class="wea-status">${status}</div>`
                 break
             default:
-                background.style.background="url(img/pexels-pixabay-209831.jpg) no-repeat fixed center"
+                bg.style.background="url(img/pexels-pixabay-209831.jpg) no-repeat fixed center"
                 document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/cloud.png" alt="icon" class="whether-icon">
                 <div class="wea-status">${status}</div>`
                 break
