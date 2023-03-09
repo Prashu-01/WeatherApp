@@ -65,6 +65,7 @@ function myfun() {
         document.querySelector("#temp").innerHTML = `${weather[items].temp_c} &deg`
         document.querySelector(".c-name").innerHTML = `${city}`
         
+        // weather status
         let status
         for(i in weather[items].condition){
             status=weather[items].condition[i]
