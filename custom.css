@@ -249,10 +249,10 @@ body{
 }
 
 @media only screen and (max-width: 450px){ /* smartphone view */
-    #container{
+    /* #container{
         overflow: visible;
         background: url("img/mist.jpg") no-repeat fixed center;
-    }
+    } */
     .weather-app{
         margin: 40px 10px;
     }
