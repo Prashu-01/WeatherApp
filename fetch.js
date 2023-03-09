@@ -111,7 +111,8 @@ function fetch_func() {
         
         switch(status){
             case "Sunny":
-                bg.style.background="url(img/sunny_day.jpg) no-repeat fixed center"
+                // bg.style.background="url(img/sunny_day.jpg) no-repeat fixed center"
+                bg.style.backgroundColor='white'
                 document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/sun.png" alt="icon" class="whether-icon">
                 <div class="wea-status">${status}</div>`
                 break
