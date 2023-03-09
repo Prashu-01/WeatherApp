@@ -75,6 +75,8 @@ switch (mon) {
 document.querySelector(".date").innerHTML= d.getDate()
 document.querySelector(".mon").innerHTML = str_mon
 
+let bg=document.getElementById("container")
+
 // displaying weather of searched city
 function fetch_func() {
     let city = document.querySelector("#search-city").value
@@ -106,10 +108,10 @@ function fetch_func() {
         document.querySelector(".wea-status").innerHTML=`${status}`
 
         // dynamically changing the background as per the weather condition
-        let bg=document.querySelector("#container")
+        
         switch(status){
             case "Sunny":
-                bg.style.background="url(img/desert.jpg) no-repeat fixed center"
+                bg.style.background="url(img/sunny_day.jpg) no-repeat fixed center"
                 document.querySelector(".whether-status").innerHTML=`<img src="img/weather-icons/sun.png" alt="icon" class="whether-icon">
                 <div class="wea-status">${status}</div>`
                 break
